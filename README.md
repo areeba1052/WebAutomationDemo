@@ -14,19 +14,6 @@ This project is an automation testing framework for the [Swag Labs demo app](htt
 - ChromeDriver (or any WebDriver)
 - dotenv-java for configuration management
 
----
-
-## 📁 Project Structure
-
-src/main/java
-│
-├─ base/ # Base classes for driver and page setup
-├─ pages/ # Page Objects (LoginPage, HomePage, ProductDetailPage, etc.)
-├─ utils/ # Utility classes (ConfigReader, etc.)
-└─ tests/ # TestNG test classes (LoginTest, HomeTest, etc.)
-
-yaml
-Copy code
 
 ---
 
@@ -42,29 +29,21 @@ Copy code
 
 ---
 
-## 🧪 Running Tests
 
-1. Clone the repository.
-2. Open the project in IntelliJ IDEA or any Java IDE.
-3. Make sure **Maven dependencies** are downloaded.
-4. Configure `.env` file under `src/main/resources/`:
-
-```text
-BASE_URL=https://www.saucedemo.com/
-USERNAME=standard_user
-PASSWORD=secret_sauce
 Run tests via TestNG:
 
 Right-click test class → Run
 
 Or using Maven command:
 
-bash
-Copy code
 mvn test
+
 ⚠️ Notes
+
 Ensure ChromeDriver matches your installed Chrome version.
 
 Keep .env file secure — do not commit credentials to version control.
 
 If you encounter NoSuchElementException, check that the correct page is loaded before locating elements.
+
+
